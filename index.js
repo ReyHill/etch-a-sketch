@@ -10,9 +10,12 @@
 
 const grid = document.querySelector('.grid');
 
+const tile = document.createElement('div'); 
+tile.setAttribute('class', 'tile');
+
 const button = document.createElement('button');
 button.textContent = 'Click';
-grid.appendChild(button);
+document.body.appendChild(button);
 
 button.addEventListener('click', () => {
   const columns = Number(prompt('How many columns?', ''));
