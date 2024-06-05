@@ -1,9 +1,12 @@
 // 1) get input via a function that prompts for columns & rows 
 // 2) store the values in seperate variables 
 // 3) IF these values are both numbers
-    // 3A) IF less than or equal to 100, pass these values as arguments into functions 
-      // createColumns(columns)
-      // createRows(rows)
+    // IF less than or equal to 100, pass these values as arguments into functions 
+      // IF columns and rows are both equal to 0, log an error message. 
+      // IF columns or rows are greater than 100, log an errror message. 
+      // IF columns and rows are less than 100,  
+        // createColumns(columns)
+        // createRows(rows)
 
 const grid = document.querySelector('.grid');
 
