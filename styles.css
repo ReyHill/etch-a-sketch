@@ -1,0 +1,9 @@
+.grid {
+    display: flex;
+    border: solid black;
+    justify-content: space-evenly;
+}
+
+.tile {
+    border: solid blue;
+}
