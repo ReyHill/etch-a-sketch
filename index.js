@@ -14,8 +14,12 @@ grid.appendChild(button);
 button.addEventListener('click', () => {
   const columns = Number(prompt('How many columns?', ''));
   const rows = Number(prompt('How many rows?', ''));
-  if (!isNaN(columns) &&!isNaN(rows)) {
-    if (columns <= 100 && rows <= 100) {
+  if (!isNaN(columns) && !isNaN(rows)) {
+    if (columns === 0 && rows === 0) {
+      console.log('No tiles generated.');
+    } else if (columns > 100 || rows > 100) {
+      console.log('Cannot generate more than 100 tiles in any direction.')
+    } else if (columns <= 100 && rows <= 100) {
       createColumns(columns);
       createRows(rows); 
     }
