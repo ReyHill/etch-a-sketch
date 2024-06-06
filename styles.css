@@ -2,8 +2,11 @@
     display: flex;
     border: solid black;
     justify-content: space-evenly;
+    max-width: 960px;
 }
 
 .tile {
     border: solid blue;
+    height: 50px;
+    width: 50px;
 }
