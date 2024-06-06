@@ -29,6 +29,8 @@ button.addEventListener('click', () => {
       createColumns(columns);
       createRows(rows); 
     }
+  } else {
+    console.log('Invalid input');
   }
 }); 
 
