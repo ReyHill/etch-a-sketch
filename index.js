@@ -10,9 +10,6 @@
 
 const grid = document.querySelector('.grid');
 
-const tile = document.createElement('div'); 
-tile.setAttribute('class', 'tile');
-
 const button = document.createElement('button');
 button.textContent = 'Click';
 document.body.appendChild(button);
@@ -36,6 +33,14 @@ button.addEventListener('click', () => {
 
 function createColumns(x) {
     console.log(x); 
+    // make x amount of divs
+      // set the class attribute for each of these divs to 'grid'
+      // append all of these divs to the grid container element
+      for(let i = 0; i < x; i++) {
+        const tile = document.createElement('div');
+        tile.setAttribute('class', 'tile');
+        grid.appendChild(tile); 
+      }
 }
 
 function createRows(y) {
