@@ -7,6 +7,11 @@
     max-width: 960px;
 }
 
+.row {
+    display: flex;
+    border: solid red;
+}
+
 .tile {
     border: solid blue;
     height: 50px;
