@@ -10,6 +10,8 @@
 .row {
     display: flex;
     border: solid red;
+    margin: 10px;
+    gap: 10px;
 }
 
 .tile {
