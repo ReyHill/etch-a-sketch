@@ -32,4 +32,6 @@ button.addEventListener('click', () => {
 
 function createGrid(columns, rows) {
   // use the inputted values to create a grid. 
+    // for as long as i is less than columns, create tile-class divs
+        // for as long as j is less than rows, create row-class divs.
 }
