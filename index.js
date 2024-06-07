@@ -34,4 +34,16 @@ function createGrid(columns, rows) {
   // use the inputted values to create a grid. 
     // for as long as i is less than columns, create tile-class divs
         // for as long as j is less than rows, create row-class divs.
+        for(let i = 0; i < rows; i++) {
+          // create row-class divs amd append them to the grid div
+          const rowDiv = document.createElement('div');
+          rowDiv.setAttribute('class', 'row');
+          grid.appendChild(rowDiv);
+          for(j = 0; j < columns; j++) {
+            // create tiles-class divs and append them to the row divs
+            const columnDiv = document.createElement('div'); 
+            columnDiv.setAttribute('class', 'tile');
+            rowDiv.appendChild(columnDiv);
+          }
+        }
 }
