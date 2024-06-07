@@ -23,26 +23,13 @@ button.addEventListener('click', () => {
     } else if (columns > 100 || rows > 100) {
       console.log('Cannot generate more than 100 tiles in any direction.')
     } else if (columns <= 100 && rows <= 100) {
-      createColumns(columns);
-      createRows(rows); 
+      createGrid(columns, rows); 
     }
   } else {
     console.log('Invalid input');
   }
 }); 
 
-function createColumns(x) {
-    console.log(x); 
-    // make x amount of divs
-      // set the class attribute for each of these divs to 'grid'
-      // append all of these divs to the grid container element
-      for(let i = 0; i < x; i++) {
-        const tile = document.createElement('div');
-        tile.setAttribute('class', 'tile');
-        grid.appendChild(tile); 
-      }
-}
-
-function createRows(y) {
-    console.log(y);
+function createGrid(columns, rows) {
+  // use the inputted values to create a grid. 
 }
