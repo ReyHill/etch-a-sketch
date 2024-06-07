@@ -1,7 +1,9 @@
 .grid {
     display: flex;
-    border: solid black;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    border: solid black;
     max-width: 960px;
 }
 
