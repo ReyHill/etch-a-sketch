@@ -11,7 +11,7 @@
 const grid = document.querySelector('.grid');
 
 const button = document.createElement('button');
-button.textContent = 'Click';
+button.textContent = 'Generate New Grid';
 document.body.appendChild(button);
 
 button.addEventListener('click', () => {
