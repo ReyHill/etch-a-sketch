@@ -15,13 +15,12 @@ body {
 
 .row {
     display: flex;
-    border: solid red;
-    margin: 10px;
-    gap: 10px;
+    margin-bottom: 5px;
+    gap: 5px;
 }
 
 .tile {
-    border: solid blue;
+    border: solid black 5px;
     height: 50px;
     width: 50px;
     background-color: white;
