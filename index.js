@@ -15,6 +15,7 @@ button.textContent = 'Generate New Grid';
 document.body.appendChild(button);
 
 button.addEventListener('click', () => {
+  grid.textContent = '';
   const columns = Number(prompt('How many columns?', ''));
   const rows = Number(prompt('How many rows?', ''));
   if (!isNaN(columns) && !isNaN(rows)) {
