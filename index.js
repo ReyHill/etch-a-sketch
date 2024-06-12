@@ -47,4 +47,19 @@ function createGrid(columns, rows) {
             rowDiv.appendChild(columnDiv);
           }
         }
+        const tiles = document.querySelectorAll('.tile');
+        tiles.forEach(element => {
+          element.addEventListener('mouseover', () => {
+            element.style.backgroundColor = `rgb(${rgbNum()}, ${rgbNum()}, ${rgbNum()})`;
+          })
+        })
+        tiles.forEach(element => {
+          element.addEventListener('mouseout', () => {
+            element.style.backgroundColor = '';
+          })
+        })
+}
+
+function rgbNum() {
+  return Math.floor(Math.random() * 256); 
 }
