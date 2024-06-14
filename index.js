@@ -20,14 +20,14 @@ button.addEventListener('click', () => {
   const rows = Number(prompt('How many rows?', ''));
   if (!isNaN(columns) && !isNaN(rows)) {
     if (columns === 0 && rows === 0) {
-      console.log('No tiles generated.');
+      alert('No tiles generated.');
     } else if (columns > 100 || rows > 100) {
-      console.log('Cannot generate more than 100 tiles in any direction.')
+      alert('Cannot generate more than 100 tiles in any direction.')
     } else if (columns <= 100 && rows <= 100) {
       createGrid(columns, rows); 
     }
   } else {
-    console.log('Invalid input');
+    alert('Invalid input');
   }
 }); 
 
@@ -51,11 +51,20 @@ function createGrid(columns, rows) {
         tiles.forEach(element => {
           element.addEventListener('mouseover', () => {
             element.style.backgroundColor = `rgb(${rgbNum()}, ${rgbNum()}, ${rgbNum()})`;
-          })
-        })
+          });
+        });
         tiles.forEach(element => {
           element.addEventListener('mouseout', () => {
             element.style.backgroundColor = '';
+          });
+        });
+        tiles.forEach(element => {
+          let currentOpacity = 1; 
+          element.addEventListener('mouseover', function() {
+            currentOpacity -= 0.1; 
+            if(currentOpacity >= 0) {
+              element.style.opacity = currentOpacity; 
+            }
           })
         })
 }
